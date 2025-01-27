@@ -3,9 +3,9 @@ package com.jad;
 import java.util.ArrayList;
 
 public class Foo implements IFoo {
+    private final IQux qux;
     private IBaz baz;
     private ArrayList<IBar> bars = new ArrayList<>();
-    private IQux qux;
     private ICorge corge;
 
     public Foo(IBaz baz) {
@@ -25,5 +25,17 @@ public class Foo implements IFoo {
     @Override
     public void setCorge(ICorge corge) {
         this.corge = corge;
+    }
+
+    public IQux getQux() {
+        return this.qux;
+    }
+
+    public ArrayList<IBar> getBars() {
+        return this.bars;
+    }
+
+    public void setBars(ArrayList<IBar> bars) {
+        this.bars = bars;
     }
 }
