@@ -35,10 +35,6 @@ public class Foo implements IFoo {
         return this.bars;
     }
 
-    public void setBars(ArrayList<IBar> bars) {
-        this.bars = bars;
-    }
-
     public IBaz getBaz() {
         return this.baz;
     }
