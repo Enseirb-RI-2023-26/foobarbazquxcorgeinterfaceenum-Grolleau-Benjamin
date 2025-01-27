@@ -38,4 +38,8 @@ public class Foo implements IFoo {
     public void setBars(ArrayList<IBar> bars) {
         this.bars = bars;
     }
+
+    public IBaz getBaz() {
+        return this.baz;
+    }
 }
